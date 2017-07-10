@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alejandra romero</title>
+    <link rel="stylesheet" type="text/css" href="stuff.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <div class="all">
+      <div class="propic">
+        <img src="pic43.jpg" class="mainpic grayscale">
+      </div>
+      <div class="main">
+        <div class="tabbar">
+          <button class="tablinks" onClick= "openTab (event, 'content1')">B I O</button>
+          <button class="tablinks" onClick= "openTab (event, 'content2')">L I N K S</button>
+          <button class="tablinks" onClick= "openTab (event, 'content3')">G A L L E R Y</button>
+        </div>
+        <div id=content1 class="tabcontent">
+        <p>
+        <i><center>"there is no greatness where there<br>is no simplicity, goodness and truth."</center></i></p>
+        <p>i was born in lima, peru on september fifteenth to a peruvian mother and a spanish father.
+        i lived in peru for five years, until i moved to mexico city, where i started elementary
+        school and would stay until eighth grade. i mostly grew up in mexico city, but i was always
+        very connected to my family in spain and peru, visiting every year for summer and winter holidays.</p>
+        <table>
+            <tr>
+              <td>
+                <p><center><b><i>likes</i></b>:</center><br>
+                <ul>
+                <li>books</li>
+                <li>traveling</li>
+                <li>ice cream</li>
+                <li>coding</li>
+                <li>oreos</li>
+                </ul></p>
+              </td>
+              <td>
+                <p><center><b><i>faves</i></b>:</center><br>
+                <ul>
+                <li><i>song:</i> cliff's edge</li>
+                <li><i>book:</i> the secret history</li>
+                <li><i>ice cream flavor:</i> mint chip</li>
+                <li><i>movie:</i> legally blonde</li>
+                <li><i>color:</i> gray</li>
+                </ul></p>
+              </td>
+              <td>
+                <p><center><b><i>dislikes</i></b>:</center><br>
+                <ul>
+                <li>country music</li>
+                <li>beef jerky</li>
+                <li>neon colors</li>
+                <li>lazy people</li>
+                <li>blueberry muffins</li>
+                </ul></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id=content2 class="tabcontent">
+          <table>
+              <tr>
+                <td>
+                  <p><b><i>fave websites</i></b>:<br>
+                  <ul>
+                  <li><a href="scratch.mit.edu">scratch</a></li>
+                  <li><a href="repl.it">repl.it</a></li>
+                  <li><a href="netflix.com">netflix</a></li>
+                  </ul></p>
+                </td>
+                <td>
+                  <img src="scratchgame.jpg" class="game grayscale"></img>
+                  <p>the game we developed on scratch was called "sky dodger",
+                  where a paper airplane flies through the sky, avoiding pigeons
+                  and catching stars. the player starts with three lives, and loses
+                  one every time they touch a pigeon, and gain twenty-five points every
+                  time they catch a star. the game also displays a high score.</p>
+                </td>
+              </tr>
+              </table>
+        </div>
+        <div id=content3 class="tabcontent">
+          <img src="pic1.jpg" class="gallerypic grayscale">
+          <img src="pic2.jpg" class="gallerypic grayscale">
+          <img src="pic3.jpg" class="gallerypic grayscale">
+          <img src="pic4.jpg" class="gallerypic grayscale">
+          <img src="pic5.jpg" class="gallerypic grayscale">
+          <img src="pic6.jpg" class="gallerypic grayscale">
+          <img src="pic7.jpg" class="gallerypic grayscale">
+          <img src="pic8.jpg" class="gallerypic grayscale">
+          <img src="pic9.jpg" class="gallerypic grayscale">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+  function openTab(evt, tabName) {
+  /* defines variables */
+  var i, tabcontent, tablinks;
+
+  /* get all elements with class="tabcontent" and hide them */
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  /* get all elements with class="tablinks" and remove the class "active" */
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  /* show the current tab, and add an "active" class to the button that opened the tab */
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
+</html>
